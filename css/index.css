@@ -145,6 +145,9 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
+h1 {
+  font-size: 4rem;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -160,6 +163,29 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+nav .nav-items {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 1rem 2rem;
+}
+@media (max-width: 500px) {
+  nav .nav-items {
+    width: 80%;
+  }
+}
+nav .nav-items a {
+  text-decoration: none;
+  text-align: center;
+  justify-content: space-between;
+  color: #454A59;
+  font-size: 1.6rem;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -170,8 +196,17 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.home .intro img {
+.topper {
   display: flex;
+  width: 100%;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    display: flex;
+    margin: 0 auto;
+    max-width: 100%;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -239,13 +274,19 @@ footer {
 }
 .home .walk .walk-text .btn {
   display: flex;
+  width: 50%;
   padding: 1.5rem;
   margin: 1rem;
   background: #22283A;
   color: #F6F7F8;
-  border-radius: 10px;
+  border-radius: 5px;
   justify-content: center;
   font-size: 1.75rem;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+  }
 }
 .home .walk .walk-img {
   width: 46%;

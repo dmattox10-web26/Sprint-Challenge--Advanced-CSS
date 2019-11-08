@@ -1,10 +1,21 @@
 // Home Content
-
+.topper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
 .home {
 
   .intro {
+    
     img {
-      display: flex;
+
+      @media @phone {
+        display: flex;
+        margin: 0 auto;
+        max-width:100%;
+      }
+      
     }
     h2 {
       padding: 15px;
@@ -84,6 +95,10 @@
 
       .btn {
         display: flex;
+        width: 50%;
+        @media @phone {
+          width: 100%;
+        }
         .button(1.5rem, 1rem, @btn-bg-color, @porcelain);
       }
     }
