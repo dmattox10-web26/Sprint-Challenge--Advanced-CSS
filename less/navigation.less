@@ -1,1 +1,23 @@
 // Navigation code here
+
+nav {
+    .center();
+    
+    .nav-items {
+         display: flex;
+         justify-content: space-between;
+         width: 50%;
+         margin: 1rem 2rem;
+
+         @media @phone {
+             width: 80%;
+         }
+         a {
+            text-decoration: none;
+            text-align: center;
+            justify-content: space-between;
+            color: @river-bend;
+            font-size: 1.6rem;
+         }
+    }
+}
